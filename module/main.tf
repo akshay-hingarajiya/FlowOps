@@ -12,7 +12,7 @@ resource "azurerm_storage_account" "example" {
   resource_group_name      = data.azurerm_resource_group.rg.name
   location                 = data.azurerm_resource_group.rg.location
   account_tier             = "Standard"
-  allow_blob_public_access = true
+  # allow_blob_public_access = true
   account_replication_type = "LRS"
 }
 resource "azurerm_app_service_plan" "example" {
