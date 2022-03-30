@@ -3,7 +3,7 @@ provider "azurerm" {
 }
 
 module "func" {
-  source = "./modules/function_app"
+  source = "./module"
 }
 
 # module "func1" {
